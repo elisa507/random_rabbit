@@ -1,0 +1,9 @@
+Flask
+Flask-WTF
+itsdangerous
+Jinja2
+MarkupSafe
+python-dotenv
+Werkzeug
+WTForms
+python-dotenv

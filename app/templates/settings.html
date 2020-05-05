@@ -1,0 +1,59 @@
+{% extends 'layout.html' %}
+
+{% block styles %}
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='css/home.css') }}"
+      rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content %}
+<div class="formwrapper">
+    <h1>Random Rabbit: optional settings</h1>
+    <style>
+
+    .headertext {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 600px;
+    margin-left: 600px;
+    }
+    </style>
+    <div class="headertext"><h4>You can input the following parameters, the default are:</h4></div>
+
+    <br>
+    <div class="headertext">Minimum number: 0</div>
+
+    <br>
+    <div class="headertext">Maximum number: 1000</div>
+
+    <br>
+    <div class="headertext">Maximum delay time: 10 s</div>
+
+    <br>
+
+    <form method="POST" action="/settings">
+        <div class="headertext"><h3>Minimum number: </h3></div>
+        <div class="headertext">
+            {{ form.min_n }}
+        </div>
+        <div class="headertext"><h3>Maximum number: </h3></div>
+        <div class="headertext">
+            {{ form.max_n }}
+        </div>
+
+        <div class="headertext"><h3>Maximum delay time (s): </h3></div>
+        <div class="headertext">
+            {{ form.max_t}}
+        </div>
+
+        <br>
+        <div class="headertext">
+            {{ form.csrf_token }}
+            {{ form.submit}}
+        </div>
+
+    </form>
+    <br>
+</div>
+</div>
+{% endblock %}

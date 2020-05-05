@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block styles %}
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='css/home.css') }}"
+      rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block content %}
+<div class="formwrapper">
+    <h1>Random Rabbit</h1>
+    <style>
+.headertext {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+    </style>
+    <div class="headertext">
+        {{ str_num }}
+    </div>
+    <ul>
+        <meta http-equiv="refresh" content="1">
+    </ul>
+</div>
+{% endblock %}
