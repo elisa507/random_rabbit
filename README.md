@@ -11,6 +11,7 @@ simply reloaded every 1 second (given that the minimum delay is 1 s).
 In the first page it's possible to set optional parameters.
 
 This app was created using python3.8, and developed using PyCharm. 
-If opened in PyCharm, once the virtual environment is created the required
-packages are recognised and should be installed.
+If opened in PyCharm, once the virtual environment 
+is created and the configuration for the main is added, the required
+packages should be recognised from the requirements file and should be installed.
 Then running the main script runs the app.
